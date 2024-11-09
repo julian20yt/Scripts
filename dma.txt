@@ -1,0 +1,24 @@
+{iscript: invert #
+get # width w
+get # height h
+load https://cdn.discordapp.com/attachments/1124758334805909509/1302921946345902130/convert.png?ex=6729e01f&is=67288e9f&hm=1b846cef55fa57ebd938d740ec80c1e84151a9d347f181f4b1d9adbac6c88b6d& overlay
+resize overlay w h
+opacity overlay 50
+overlay # overlay
+huecurvergba # all 1 0 1
+huecurvergba # all 0 0.6 1
+copy # #p
+copy # #q
+copy # #r
+audiopitch # 1.05946
+audiopitch #p 0.26487
+audioputmix # #p
+volume #
+audiopitch #q 0.52973
+audioputmix # #q
+volume #
+audiopitch #r 1.05946
+audiopitch #r 2
+audioputmix # #r
+volume #
+}
