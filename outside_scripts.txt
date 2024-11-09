@@ -1,0 +1,17 @@
+swaprgba # bgra, swirl # -50, haah #, copy # #2, copy # #3, audiopitch # 0.8908987181403393, audiopitch #2 1.189207115002721, audiopitch #3 0.7937005259840998, audioputmix # #2, audioputmix # #3, volume # 3
+swaprgba # bgr, copy # #2, audiopitch # 1.26, audiopitch #2 0.75, overlay # #2, volume # 2
+get # width w, get # height h, hueshifthsv # 180, waaw #, rotate # 90, waves # w/40 w/5 5, rotate # -90, cover # w h, audiopitch # 0.866
+get # width w , get # height h, copy # #2, crop # w/2 h 0 0, hueshifthsv #2 180, rotate #2 90, waves #2 w/40 w/5 3, rotate #2 -90, cover #2 w h, audiopitch #2 0.866, crop #2 w/2 h w 0, join # #2, volume # 2
+gold # , #nvert #, copy # #2, audiopitch # 1.5, audiopitch #2 0.5, overlay # #2, volume # 2
+darken # 15, contrast # 10, deepfry # 2, copy # #2, audiopitch # 0.63, overlay # #2, volume # 2
+hueshifthsv # -120, explode #, audiopitch # 0.6299605249474366
+flop #, hueshifthsv # 30, audiopitch # 1.122462048309373
+flip #, hueshifthsv # -30, audiopitch # 0.8908987181403393
+contrast # -1, deepfry #, copy # #2, audiopitch #2 0.667, overlay # #2, volume # 2
+hueshifthsv # 60 500, flop #, audiovibrato # 12 1, audiovibrato # 12 1, audiovibrato # 12 1, audiovibrato # 12 1
+hueshifthsv # 240, copy # #p, audiopitch # 2, audiopitch #p 0.6674199270850172, overlay # #p, volume # 2
+get # width w, get # height h, reverse #, audiopitch # 1.4142135623730951, swirl # 120, hueshifthsv # 45, distort # resize w h*2, cover # w h, swirl # -120
+hueshifthsv # -120, invert #, audiovibrato # 20000, copy # #2, snip #2 0.013, volume # 1.1, overlay # #2, audiopitch # 1.189207115002721, copy # #3, audiopitch #3 0.6674199270850172, audioputmix # #3, volume # 4
+hueshifthsv # 180, #nvert #, distort # Scale_Rotate_Translate -1, copy # #2, audiopitch #2 1.004, audioputmix # #2, volume #, sharpen # 5
+get # width w, get # height h, invert #, copy # a, copy a a2, audiopitch a 1.189, audiopitch a2 0.943, audioputmix a a2, volume a 2, overlay # a, volume # 2, swaprgba # bbag, haah # , cover # w h
+get # width w , get # height h, copy # #2, waaw #2, crop # w/2 h 0 0, hueshifthsv #2 180, rotate #2 90, waves #2 w/40 w/5 3, rotate #2 -90, cover #2 w h, audiopitch #2 0.866, crop #2 w/2 h w 0, join # #2, volume # 2, swaprgba # grb
