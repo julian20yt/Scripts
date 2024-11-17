@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wii Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 15px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item {
+            background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Wii Channel
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Mii Channel
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Photo Channel
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Settings
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Shop Channel
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            News Channel
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Forecast Channel
+        </div>
+        <div class="menu-item">
+            <img src="guh.png" alt="Channel">
+            Virtual Console
+        </div>
+    </div>
+</body>
+</html>
