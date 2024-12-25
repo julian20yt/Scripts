@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox Update Screen</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "Segoe UI", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .update-screen {
+            text-align: center;
+            width: 80%;
+        }
+        .update-text {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        .console-image {
+            width: 40%;
+            margin: 0 auto;
+            display: block;
+        }
+        .progress-container {
+            margin-top: 40px;
+        }
+        .progress-text {
+            font-size: 24px;
+        }
+        .progress-bar {
+            margin: 10px auto;
+            width: 70%;
+            height: 10px;
+            background-color: #444;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            width: 4%; /* Adjust this for the progress percentage */
+            height: 100%;
+            background-color: #00FF00;
+        }
+        .remaining-text {
+            font-size: 18px;
+            color: #999999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="update-screen">
+        <div class="update-text">Updating...</div>
+        <img class="console-image" src="https://via.placeholder.com/500x250" alt="Console Image" />
+        <div class="progress-container">
+            <div class="progress-text">4%</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="remaining-text">Your console may restart during the update.<br>406 MB remaining</div>
+        </div>
+    </div>
+</body>
+</html>
