@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(to bottom, #3d3d3d, #232323);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dashboard {
+            width: 960px;
+            height: 540px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            background-color: #1d1d1d;
+        }
+        .menu {
+            background-color: #303030;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .menu-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .menu-item.active {
+            background-color: #37a033;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FF9900;
+        }
+        .subtitle {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #CCCCCC;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 16px;
+            color: #AAAAAA;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="menu">
+            <div class="menu-item active">My Games</div>
+            <div class="menu-item">My Apps</div>
+            <div class="menu-item">Settings</div>
+        </div>
+        <div class="content">
+            <div class="logo">XBOX LIVE</div>
+            <div class="subtitle">Xbox LIVE is not available on consoles in your region.</div>
+        </div>
+    </div>
+    <div class="footer">A - Select</div>
+</body>
+</html>
