@@ -83,7 +83,7 @@ echo.FAILURE_RETRIEVE_REGCODE_AFTER_ELIGIBLE_METRIC_SENT =
 /**
  * API key used for Google API access.
  */
-echo.APIARY_KEY = 'AIzaSyBaw6h2A15kTjBhA9aOUreEckVAZjx_1-0';
+echo.APIARY_KEY = 'NaN';
 
 /**
  * Google API frontend used for requests.
